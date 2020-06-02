@@ -4,7 +4,7 @@ $entreprise = unserialize($_REQUEST['entreprise']);
 $stage = unserialize($_REQUEST['stage']);
 $convention = unserialize($_REQUEST['convention']);
 $formateur = $_REQUEST['formateur'];
-$site = "http://" . $_SERVER['SERVER_NAME'] . "/pgspV2/images/"; //localhost
+$site = "http://" . $_SERVER['SERVER_NAME'] . "/pgsp/images/"; //localhost
 //$site = "http://" . $_SERVER['SERVER_NAME'] . "/pgsp/images/"; // ovh
 require_once '../data/class.PDOpgsp.php';
 $pdo = PdoPgsp::getPdoPgsp();
